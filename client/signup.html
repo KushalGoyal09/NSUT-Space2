@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/NSUT_logo.png" type="image/x-icon">
+    <title>SignUp Page - NSUT-Space</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="login-form">
+            <div class="login-card">
+                <h1>SignUp</h1>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" required>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Your username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Your password (at least 8 characters)" required>
+                <div class="password-strength">
+                    <progress max="100" value="0" id="password-strength-meter"></progress>
+                    <p id="password-strength-text">Password strength: <span id="password-strength-label">Weak</span></p>
+                </div>
+                <div id="error"></div>
+                <button id="login-button" type="submit">SignUp</button>
+            </div>
+            <div id="message">
+
+            </div>
+            <div class="signup">
+                Already have an account? <a href="login.html">Log in here</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+
+</html>

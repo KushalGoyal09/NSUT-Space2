@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    border-radius: 3px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.brand span {
+    font-weight: bold;
+    margin-left: 10px;
+    color: rgb(217, 235, 242);
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
+    margin-right: 10px;
+}
+
+.user-avatar {
+    cursor: pointer;
+}
+
+.user-avatar img {
+    width: 5ch;
+}
+
+.button {
+    background-color: #fff;
+    color: #3498db;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tweet {
+    border: 1px solid #e1e8ed;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.tweet-text {
+    margin: 10px 0;
+    color: #333;
+}
+
+.interaction-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interaction-button {
+    display: flex;
+    align-items: center;
+    color: #657786;
+}
+
+.like-btn {
+    cursor: pointer;
+}
+
+.interaction-count {
+    color: #657786;
+    margin-left: 5px;
+}
+
+/* popup */
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+#closePopup {
+    display: block;
+    margin: 10px auto 0;
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.popup a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* single */
+
+.single-tweet {
+    display: none;
+}
+
+.back {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.7rem;
+}
+
+.fa-arrow-left {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.comments-container {
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-avatar img {
+    margin-right: 10px;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.comment-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-start;
+    margin: 10px;
+}
+
+.comment-content textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    resize: none;
+    height: auto;
+}
+
+.comment-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline;
+    margin-bottom: -50px;
+}
+
+.comment-text {
+    font-size: 14px;
+}
+
+.comment-username {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 14px 8px;
+}
+
+/* loader */
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #3498db;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0.5s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* drop-down */
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-dropdown li {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.user-dropdown li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.show {
+    display: block;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Page - NSUT-Space</title>
+    <link rel="shortcut icon" href="static/NSUT_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="login-form">
+            <div class="login-card">
+                <h1>Log In</h1>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Your username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Your password" required>
+                <div id="error"></div>
+                <button id="login-button" type="submit">Log In</button>
+            </div>
+            <div id="message">
+            </div>
+            <div class="signup">
+                Don't have an account? <a href="signup.html">SignUp here</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

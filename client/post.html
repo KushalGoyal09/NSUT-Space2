@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/NSUT_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="post.css">
+    <title>Post</title>
+</head>
+
+<body>
+    <div id="login-container">
+        <h2>Login First to Post</h2>
+        <p>Click <a id="login-link" href="./login.html">here</a> to log in</p>
+    </div>
+    <main id="main">
+        <div class="navbar">
+            <div class="brand">
+                <img src="static/NSUT_logo.png" width="40" height="40">
+                <span>NSUT-Space</span>
+            </div>
+            <div class="nav-buttons">
+                <div class="username"></div>
+                <div class="user-avatar" id="avatar">
+                    <img src="static/user.png" alt="user">
+                </div>
+            </div>
+        </div>
+        <div class="tweet-container">
+            <h2>Post</h2>
+            <div class="user-info">
+                <div class="user-avatar"><img src="static/user.png" alt="user"></div>
+                <div class="user-username">Username</div>
+            </div>
+            <textarea class="tweet-input" placeholder="What's on your mind?" id="tweet-input"></textarea>
+            <img src="static/magic-wand.png" alt="ai" class="ai" id="generate-post"><br>
+            <button class="post-button" id="post-btn">Post</button>
+        </div>
+        <div class="message" id="message">
+        </div>
+    </main>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="post.js"></script>
+</body>
+
+</html>
