@@ -33,7 +33,7 @@ app.use(notFound);
 
 const start = async() => {
     try {
-        await connectDB(process.env.MONGODB_URI_localhost);
+        await connectDB(process.env.MONGODB_URI);
         app.listen(port, () => {
             console.log(`Listening to the port ${port}...`);
         })
